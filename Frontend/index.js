@@ -3,12 +3,12 @@ var users=[
     {
         "name":"Tom Holland",
         "gender":"Male",
-        "image":"john.png"
+        "image":"Tom-Holland.png"
     },
     {
         "name":"Zendaya",
         "gender":"Female",
-        "image":"jane.png"
+        "image":"Zendaya.png"
     }
 ]
 var curId=0;
