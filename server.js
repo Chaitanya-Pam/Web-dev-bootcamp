@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 8080;
 app.use(express.static("Frontend"));
+app.use(express.json());
 var users=[
     {
         "id":1,
@@ -68,6 +69,7 @@ var users=[
         "image":"https://randomuser.me/api/portraits/women/30.jpg",
     }
 ]
+var nextId=11;
 function getId(id){
     for(var i=0;i<users.length;i++){
         if(users[i].id===id){
@@ -94,6 +96,19 @@ app.get("/api/random-user",function(req,res){
     var randomIndex=Math.floor(Math.random()*users.length);
     return res.json(users[randomIndex]);
 });
+app.post("/api/users",function(req,res){
+    var newUser=req.body;
+    var tempUser={
+        "id":nextId,
+        "name":newUser.name,
+        "gender":newUser.gender,
+        "image":newUser.image
+    }
+    users.push(tempUser);
+    nextId++;
+    return res.status(201).json(tempUser);
+});
+
 app.listen(port,function(){
     console.log("Server running on http://localhost:"+port);
 });
