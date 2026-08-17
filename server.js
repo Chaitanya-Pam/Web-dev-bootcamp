@@ -6,13 +6,13 @@ app.use(express.json());
 var users=[
     {
         "id":1,
-        "name":"Tony Stark @ Iron Man",
+        "name":"Robert Downey Jr @ Iron Man",
         "gender":"Male",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS10WIyFH95auL8jchdYvS63KrePL8PNZICjolsjDMMtA&s=10"
     },
     {
         "id":2,
-        "name":"Steve Grant Rogers @ Captain America",
+        "name":"Chris Evans @ Captain America",
         "gender":"Male",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHWSiVkqqi5v9Q8p6yFtQw9sw94pat68EOmnr9Am9pGA&s=10"
     },
@@ -24,47 +24,47 @@ var users=[
     },
     {
         "id":4,
-        "name":"Dr. Robert Bruce Banner @ Hulk",
+        "name":"Mark Ruffalo @ Hulk",
         "gender":"Male",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiEBiVhlep7KrSgGJ4znBN0-l3DWK_Q4FjyiXySaR7gw&s=10",
     },
 
     {
         "id":5,
-        "name":"Natasha Romanoff @ Black Widow",
+        "name":"Scarlett Johansson @ Black Widow",
         "gender":"Female",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDy0b-7l_dVCEJzbXWpVc3_I9eoSe3s8oQ3whqUuvGvA&s=10",
     },
 
     {
         "id":6,
-        "name":"Carol Danvers @ Captain Marvel",
+        "name":"Brie Larson @ Captain Marvel",
         "gender":"Female",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc1ZRJUht8seZ-m6NAXzbFh76A72KYNTcVSyICCBlhvQ&s=10",
     },
 
     {
         "id":7,
-        "name":"T'Challa @ Black Panther ",
+        "name":"Chadwick Boseman @ Black Panther ",
         "gender":"Male",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJulLvv8kHIChwcPNhOfoLJsdTtzc7Z7GZPAlr4We98Y-yyKM4hr1hPnY&s=10",
     },
 
     {
         "id":8,
-        "name":"Stephen Vincent Strange @ Doctor Strange",
+        "name":"Benedict Cumberbatch @ Doctor Strange",
         "gender":"Male",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGedxMZhdljGrnIMiFRhoTPZZHuGl80NdVGuUyjMpVmQ&s=10",
     },
     {
         "id":9,
-        "name":"Choi Su-bong @ Thanos",
+        "name":"Josh Brolin @ Thanos",
         "gender":"Male",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtRW-iGXp0z2aueJMT1Q9ZVHf27-Po-wFtSKxCWXagFQ&s=10",
     },
     {
         "id":10,
-        "name":"Tom Hiddleston @ Loki",
+        "name":"Thomas William Hiddleston @ Loki",
         "gender":"Female",
         "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrg5ir8oDM6B0zp2mKHV-HiBCILMrSTpXbAKF0CbXigg&s",
     }
