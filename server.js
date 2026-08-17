@@ -6,67 +6,67 @@ app.use(express.json());
 var users=[
     {
         "id":1,
-        "name":"Surigaadu",
+        "name":"Tony Stark @ Iron Man",
         "gender":"Male",
-        "image":"John.png"
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS10WIyFH95auL8jchdYvS63KrePL8PNZICjolsjDMMtA&s=10"
     },
     {
         "id":2,
-        "name":"Pentamma",
-        "gender":"Female",
-        "image":"https://randomuser.me/api/portraits/women/31.jpg"
+        "name":"Steve Grant Rogers @ Captain America",
+        "gender":"Male",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHWSiVkqqi5v9Q8p6yFtQw9sw94pat68EOmnr9Am9pGA&s=10"
     },
     {
         "id":3,
-        "name":"Appalamma",
-        "gender":"Female",
-        "image":"https://randomuser.me/api/portraits/women/47.jpg"
+        "name":"Chris Hemsworth @ Thor",
+        "gender":"Male",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrAiIfJgQBTZKwcKVyYAreCaO_IEV-VDeBVxALTvbntw&s=10"
     },
     {
         "id":4,
-        "name":"Johny",
+        "name":"Dr. Robert Bruce Banner @ Hulk",
         "gender":"Male",
-        "image":"https://randomuser.me/api/portraits/men/18.jpg",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiEBiVhlep7KrSgGJ4znBN0-l3DWK_Q4FjyiXySaR7gw&s=10",
     },
 
     {
         "id":5,
-        "name":"Aandalamma",
+        "name":"Natasha Romanoff @ Black Widow",
         "gender":"Female",
-        "image":"https://randomuser.me/api/portraits/women/43.jpg",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDy0b-7l_dVCEJzbXWpVc3_I9eoSe3s8oQ3whqUuvGvA&s=10",
     },
 
     {
         "id":6,
-        "name":"lipsika",
+        "name":"Carol Danvers @ Captain Marvel",
         "gender":"Female",
-        "image":"https://randomuser.me/api/portraits/women/26.jpg",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc1ZRJUht8seZ-m6NAXzbFh76A72KYNTcVSyICCBlhvQ&s=10",
     },
 
     {
         "id":7,
-        "name":"jesan",
+        "name":"T'Challa @ Black Panther ",
         "gender":"Male",
-        "image":"https://randomuser.me/api/portraits/men/88.jpg",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJulLvv8kHIChwcPNhOfoLJsdTtzc7Z7GZPAlr4We98Y-yyKM4hr1hPnY&s=10",
     },
 
     {
         "id":8,
-        "name":"valther veeraiya",
+        "name":"Stephen Vincent Strange @ Doctor Strange",
         "gender":"Male",
-        "image":"https://randomuser.me/api/portraits/men/5.jpg",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGedxMZhdljGrnIMiFRhoTPZZHuGl80NdVGuUyjMpVmQ&s=10",
     },
     {
         "id":9,
-        "name":"Micheline",
-        "gender":"Female",
-        "image":"https://randomuser.me/api/portraits/women/52.jpg",
+        "name":"Choi Su-bong @ Thanos",
+        "gender":"Male",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtRW-iGXp0z2aueJMT1Q9ZVHf27-Po-wFtSKxCWXagFQ&s=10",
     },
     {
         "id":10,
-        "name":"Akhila",
+        "name":"Tom Hiddleston @ Loki",
         "gender":"Female",
-        "image":"https://randomuser.me/api/portraits/women/30.jpg",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrg5ir8oDM6B0zp2mKHV-HiBCILMrSTpXbAKF0CbXigg&s",
     }
 ]
 var nextId=11;
@@ -108,6 +108,7 @@ app.post("/api/users",function(req,res){
     nextId++;
     return res.status(201).json(tempUser);
 });
+
 
 app.listen(port,function(){
     console.log("Server running on http://localhost:"+port);
