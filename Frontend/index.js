@@ -1,12 +1,12 @@
 //alert("Welcome to Chaitanya's Page");
 var users=[
     {
-        "name":"Tom Holland",
+        "name":"Tom Holland @ Spiderman",
         "gender":"Male",
         "image":"Tom-Holland.png"
     },
     {
-        "name":"Zendaya",
+        "name":"Zendaya @ MJ",
         "gender":"Female",
         "image":"Zendaya.png"
     }
