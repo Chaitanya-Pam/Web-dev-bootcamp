@@ -43,7 +43,8 @@ function randomUser(){
      .catch(function(err){
         console.log("Error in Finding user Data :",err);
     })
-function myRandomUser(){
+}
+function Marvel(){
     fetch("/api/random-user")
     .then(function(res){
             return res.json();
@@ -59,6 +60,4 @@ function myRandomUser(){
     .catch(function(err){
         console.log("Error in Finding user Data :",err);
     })
-}
-   
 }
